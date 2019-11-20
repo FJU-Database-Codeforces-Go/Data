@@ -16,11 +16,10 @@ for r1 in res:
     tmp2 = r1.text.replace("\r","").replace("\n","").replace(" ", "")
     if i % 4 == 1:
         tmp = []
-        tmp.append(tmp2);
+        tmp.append(tmp2)
     elif i % 4 == 3:
-        tmp.append(tmp2);
-        users.append(tmp);
+        tmp.append(tmp2)
+        users.append(tmp)
     i += 1
 for user in users:
     print(user)
-#print(rr.text)

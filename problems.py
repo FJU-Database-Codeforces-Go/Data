@@ -35,4 +35,3 @@ for r in res:
     i += 1
 for problem in problems:
     print(problem)
-#print(rr.text)

@@ -48,4 +48,3 @@ for r in res:
     i += 1
 for submission in submissions:
     print(submission)
-#print(rr.text)
