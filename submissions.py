@@ -62,12 +62,12 @@ def get_contest_submissions(contest):
         submissions.append(this_page)
         pre_page = this_page
         page += 1
-    with open(contest + '.json', 'w') as outfile:
+    with open(str(contest) + '.json', 'w') as outfile:
         json.dump(submissions, outfile)
 
 def get_contest():
     L, R = input().split()
-    with concurrent.futures.ThreadPoolExecutor(max_workers=5) as executor:
+    with concurrent.futures.ThreadPoolExecutor(max_workers=100) as executor:
     # Start the load operations and mark each future with its URL
         future_to_url = {executor.submit(get_contest_submissions, contestID): contestID for contestID in range(int(L),int(R))}
         for future in concurrent.futures.as_completed(future_to_url):
