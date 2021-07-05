@@ -1,2 +1,2 @@
 # Crawler
-* Crawler for Codeforces
+Crawler and data for project.
